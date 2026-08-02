@@ -1,0 +1,47 @@
+generated: '2026-07-21'
+method: searched
+source: https://registry.npmjs.org/-/v1/search?text=vendease
+description: >-
+  Vendease publishes no public API and no client SDKs. The two npm packages
+  below are first-party but internal: shared backend utility libraries
+  published by Vendease engineers (maintainers include abdul-vendease and
+  victor-vendease) for use across the Vendease platform's own services. They
+  are not client libraries for consuming a public API, so no SDKs rating
+  pointer is emitted for this artifact. PyPI, Maven Central, NuGet, pkg.go.dev,
+  RubyGems, Packagist, and crates.io returned no vendease packages.
+packages:
+  - language: javascript
+    registry: npm
+    name: vendease-common
+    url: https://www.npmjs.com/package/vendease-common
+    install: npm install vendease-common
+    official: true
+    purpose: internal-platform-utilities
+    latest: 2.1.20
+    last_published: '2023-10-31'
+    note: >-
+      "Contains a set of common utility functions, classes, and modules that
+      are used across the Vendease platform's backend system" (registry
+      description). Superseded by the scoped @vendease/common package.
+  - language: javascript
+    registry: npm
+    name: "@vendease/common"
+    url: https://www.npmjs.com/package/@vendease/common
+    install: npm install @vendease/common
+    official: true
+    purpose: internal-platform-utilities
+    latest: 1.0.372
+    last_published: '2024-02-01'
+    note: >-
+      Scoped successor to vendease-common; six maintainers, several with
+      vendease-suffixed npm handles. Internal shared library for the NestJS
+      backend monorepo documented at
+      https://vendease.github.io/vendease-docs/.
+registries_probed_without_results:
+  - pypi
+  - maven-central
+  - nuget
+  - pkg.go.dev
+  - rubygems
+  - packagist
+  - crates.io

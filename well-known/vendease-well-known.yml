@@ -1,0 +1,48 @@
+generated: '2026-07-21'
+method: searched
+description: >-
+  Results of probing the /.well-known/ discovery surface for the only public
+  Vendease host (https://vendease.com — apis[] is empty; no API base hosts
+  exist). vendease.com is a Next.js single-page app whose catch-all route
+  answers HTTP 200 with the marketing-page HTML (identical title and byte
+  length) for every path, so every probe below is a soft 404: recorded as
+  present-but-not-a-real-document and no raw files were saved. Vendease
+  publishes none of the well-known discovery documents. Internal API hosts
+  named in their public engineering docs (tums-dev.vendease.com,
+  staging-api.vendease.com, hub.vendease.com, etc.) do not resolve in public
+  DNS and could not be probed.
+hosts:
+  - host: https://vendease.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 200
+        soft_404: true
+        type: text/html
+      - path: /security.txt
+        status: 200
+        soft_404: true
+        type: text/html
+      - path: /.well-known/openid-configuration
+        status: 200
+        soft_404: true
+        type: text/html
+      - path: /.well-known/oauth-authorization-server
+        status: 200
+        soft_404: true
+        type: text/html
+      - path: /.well-known/api-catalog
+        status: 200
+        soft_404: true
+        type: text/html
+      - path: /.well-known/ai-plugin.json
+        status: 200
+        soft_404: true
+        type: text/html
+      - path: /llms.txt
+        status: 200
+        soft_404: true
+        type: text/html
+      - path: /robots.txt
+        status: 200
+        soft_404: true
+        type: text/html

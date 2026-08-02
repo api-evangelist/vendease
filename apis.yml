@@ -1,8 +1,26 @@
 aid: vendease
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/vendease.png
 name: Vendease
-description: 'Vendease is a company surfaced as a portfolio company of partech and added to the API Evangelist
-  network as a stub for enrichment. Sector: Marketplace. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: >-
+  Vendease is a Nigerian B2B food procurement platform (founded 2020, Y
+  Combinator W21, backed by Partech Africa and TLcom) that helps restaurants,
+  hotels, and other food businesses buy fresh and processed food supplies,
+  offering Buy Now, Pay Later financing, supplier consolidation, cold-chain
+  logistics, and 24-hour delivery in Lagos. Vendease publishes no public
+  developer API or SDKs; its procurement, payments, inventory, and tenant
+  management service APIs are internal-only, though its engineering handover
+  documentation is publicly available on GitHub.
 url: https://raw.githubusercontent.com/api-evangelist/vendease/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +30,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Marketplace
+- Food
+- Procurement
+- FoodTech
+- BNPL
+- Logistics
+- Nigeria
+- Africa
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +48,21 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/vendease-domain-security.yml
 - type: Website
   url: https://vendease.com/
+- type: GitHubOrganization
+  url: https://github.com/Vendease
+- type: Documentation
+  name: Vendease Engineering Handover (public MkDocs)
+  url: https://vendease.github.io/vendease-docs/
+- type: Packages
+  url: packages/vendease-packages.yml
+- type: LLMsTxt
+  url: llms/vendease-llms.txt
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 3
+  pass: local-v1
